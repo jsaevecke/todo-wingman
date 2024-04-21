@@ -3,7 +3,7 @@ package task
 type Option func(*task)
 
 type task struct {
-	status      status
+	status      Status
 	title       string
 	description string
 	tags        []string
@@ -45,7 +45,7 @@ func WithTags(tags []string) Option {
 	}
 }
 
-func WithStatus(status status) Option {
+func WithStatus(status Status) Option {
 	return func(task *task) {
 		task.status = status
 	}

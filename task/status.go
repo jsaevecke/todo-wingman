@@ -1,9 +1,9 @@
 package task
 
-type status int
+type Status int
 
 const (
-	UNKNOWN status = iota
+	UNKNOWN Status = iota
 	TODO
 	DONE
 	INPROGRESS
